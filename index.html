@@ -6,7 +6,6 @@
     <title>Taqwa High School | End of Term Newsletter 2025/2026</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
-    <!-- Chosen Palette: Brilliant Blues & Deep Magentas (Vibrant & Professional) -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
         body {
@@ -25,6 +24,22 @@
             border-left: 4px solid #ef5675;
             padding-left: 1rem;
         }
+        .img-container {
+            border-radius: 1rem;
+            overflow: hidden;
+            background-color: #f1f5f9;
+            aspect-ratio: 16 / 9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
@@ -38,7 +53,7 @@
             <div class="hidden md:flex space-x-6 font-bold text-xs uppercase tracking-widest text-slate-500">
                 <a href="#intro" class="hover:text-[#bc5090]">Introduction</a>
                 <a href="#academics" class="hover:text-[#bc5090]">Academics</a>
-                <a href="#conduct" class="hover:text-[#bc5090]">Conduct</a>
+                <a href="#highlights" class="hover:text-[#bc5090]">Highlights</a>
                 <a href="#fees" class="hover:text-[#bc5090]">Fees</a>
                 <a href="#calendar" class="hover:text-[#bc5090]">Dates</a>
             </div>
@@ -62,7 +77,7 @@
 
     <main class="max-w-6xl mx-auto px-6 py-12">
 
-        <!-- Section 0: Introduction from First Page -->
+        <!-- Section 0: Introduction -->
         <section id="intro" class="mb-20">
             <div class="bg-white p-10 rounded-3xl shadow-xl border border-slate-100">
                 <h2 class="text-3xl font-extrabold section-title mb-6 uppercase tracking-tight">Remarkable First Term</h2>
@@ -100,114 +115,107 @@
             </div>
         </section>
 
-        <!-- Section 1.5: Learning Assessment -->
-        <section id="assessment" class="mb-20">
-            <div class="bg-[#003f5c] text-white p-10 rounded-3xl shadow-xl">
-                <h2 class="text-2xl font-bold mb-6 text-[#ffa600]">Learning Assessment Structure</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div>
-                        <p class="text-blue-100 leading-relaxed mb-4">
-                            Our assessment policy is designed to provide regular feedback on student progress. It consists of:
+        <!-- Section 2: Remarkable Highlights -->
+        <section id="highlights" class="mb-20">
+            <h2 class="text-3xl font-extrabold section-title mb-8 uppercase tracking-tight">Remarkable Highlights</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                
+                <!-- Poetry Workshop -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-100 card-hover flex flex-col">
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-bold text-[#003f5c]">Poetry Creative Workshop</h3>
+                            <span class="bg-[#ef5675]/10 text-[#ef5675] text-[10px] font-bold px-3 py-1 rounded-full uppercase">Arts</span>
+                        </div>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                            On World Children’s Day, our students and pupils stepped into a transformative Poetry Workshop with the incredible Ruth Isabella Peters at Federal Palace Hotel, Victoria Island.
                         </p>
-                        <ul class="space-y-3 text-sm italic opacity-90">
-                            <li>- <strong>Continuous Assessment:</strong> 40% of the total score (Classwork, Projects, Tests)</li>
-                            <li>- <strong>End of Term Examination:</strong> 60% of the total score</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p class="text-blue-100 leading-relaxed">
-                            Reports are issued termly to provide a comprehensive overview of academic performance, behavioral traits, and participation in extracurricular activities. This ensures parents are well-informed partners in their child's educational journey.
-                        </p>
+                        <div class="img-container mt-auto">
+                            <!-- Poetry Workshop Image -->
+                            <img src="Poetrysplash.jpg" alt="Poetry Workshop Event">
+                        </div>
                     </div>
                 </div>
+
+                <!-- 1-Ummah -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-100 card-hover flex flex-col">
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-bold text-[#003f5c]">1-Ummah Convention</h3>
+                            <span class="bg-[#7a5195]/10 text-[#7a5195] text-[10px] font-bold px-3 py-1 rounded-full uppercase">Faith & Unity</span>
+                        </div>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                            Taqwa students participated in the two days 1-Ummah Peace & Unity Convention at Oriental Hotel, VI Lagos. The event featured interactive sessions and spiritual reflections.
+                        </p>
+                        <div class="img-container mt-auto">
+                            <!-- 1-Ummah Convention Image -->
+                            <img src="PUCsplash.png" alt="1-Ummah Convention Group">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trade Fair -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-100 card-hover flex flex-col">
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-bold text-[#003f5c]">Lagos Trade Fair</h3>
+                            <span class="bg-[#ffa600]/10 text-[#ffa600] text-[10px] font-bold px-3 py-1 rounded-full uppercase">Business</span>
+                        </div>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                            Our students attended this year's Trade Fair, which was an eventful and fun day for them to learn about business and entrepreneurial spirit.
+                        </p>
+                        <div class="img-container mt-auto">
+                            <!-- Placeholder for Trade Fair -->
+                            <img src="tradefairsplash.jpg" alt="Trade Fair Visit">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cyber X -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-100 card-hover flex flex-col">
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-bold text-[#003f5c]">MTN Cyber X</h3>
+                            <span class="bg-[#003f5c]/10 text-[#003f5c] text-[10px] font-bold px-3 py-1 rounded-full uppercase">Technology</span>
+                        </div>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                            Taqwa was specially invited to participate in MTN Cyber X: Next-Gen Digital Defenders at MTN Plaza Rooftop, Falomo, Ikoyi.
+                        </p>
+                        <div class="img-container mt-auto">
+                            <!-- Placeholder for Cyber X -->
+                            <img src="mtnsplash.jpeg" alt="MTN Cyber X Event">
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <!-- Section 2: Conduct, Appearance & Hygiene -->
+        <!-- Section 3: Character & Well-being -->
         <section id="conduct" class="mb-20">
             <h2 class="text-3xl font-extrabold section-title mb-8 uppercase tracking-tight">Character & Well-being</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-white p-8 rounded-3xl shadow-xl border border-slate-100">
                     <h3 class="text-xl font-bold mb-4 text-[#003f5c]">Student Conduct</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                        We emphasize patience, honesty, and respect. Students are expected to be good ambassadors of the school.
-                    </p>
-                    <span class="text-xs font-bold text-[#ef5675]">Values: Discipline & Integrity</span>
+                    <p class="text-sm text-slate-600 leading-relaxed">Patience, honesty, and respect are our foundations. We encourage our students to maintain their high standards of character.</p>
                 </div>
                 <div class="bg-white p-8 rounded-3xl shadow-xl border border-slate-100">
                     <h3 class="text-xl font-bold mb-4 text-[#003f5c]">Dress Code</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                        Ensure students return with complete and correct uniforms. Faded or torn items must be replaced immediately.
-                    </p>
-                    <span class="text-xs font-bold text-[#ef5675]">Policy: Uniform Regulation</span>
+                    <p class="text-sm text-slate-600 leading-relaxed">Complete and correct uniforms are required upon resumption. We expect all students to look sharp and prepared for learning.</p>
                 </div>
                 <div class="bg-white p-8 rounded-3xl shadow-xl border border-slate-100">
                     <h3 class="text-xl font-bold mb-4 text-[#003f5c]">Personal Hygiene</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                        Low-cut hair for boys, short nails, daily baths, and use of deodorants are mandatory for all students.
-                    </p>
-                    <span class="text-xs font-bold text-[#ef5675]">Standard: Health & Care</span>
+                    <p class="text-sm text-slate-600 leading-relaxed">Mandatory standards for hair, nails, and general care will be strictly enforced upon resumption.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Section 3: School Fees Policy -->
+        <!-- Section 4: Fees -->
         <section id="fees" class="mb-20">
-            <div class="bg-[#7a5195] text-white p-10 md:p-16 rounded-[3rem] shadow-2xl relative overflow-hidden">
-                <div class="absolute -left-20 -bottom-20 w-64 h-64 bg-white/10 rounded-full"></div>
-                <div class="relative z-10">
-                    <h2 class="text-3xl font-black mb-6 text-[#ffa600]">School Fees & Payment Policy</h2>
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                        <div>
-                            <p class="text-lg text-purple-100 mb-6">
-                                We appreciate your promptness in fulfilling financial obligations. This ensures the smooth running of our academic programs and facilities.
-                            </p>
-                            <div class="bg-white/10 p-6 rounded-2xl border border-white/20">
-                                <h4 class="font-bold text-white mb-2 underline">Terms of Payment:</h4>
-                                <p class="text-sm text-purple-200">
-                                    Fees must be paid on or before the first day of resumption. Evidence of payment (tellers/transfer receipts) should be sent to the numbers of the Head of School or/and the Accounts Office.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="space-y-4">
-                            <div class="flex items-center space-x-4 bg-white/5 p-4 rounded-xl">
-                                <div class="w-10 h-10 bg-[#ffa600] rounded-full flex items-center justify-center font-bold">1</div>
-                                <p class="text-sm">Pay through designated bank accounts only.</p>
-                            </div>
-                            <div class="flex items-center space-x-4 bg-white/5 p-4 rounded-xl">
-                                <div class="w-10 h-10 bg-[#ffa600] rounded-full flex items-center justify-center font-bold">2</div>
-                                <p class="text-sm">Include student's full name and class in the narration.</p>
-                            </div>
-                            <div class="flex items-center space-x-4 bg-white/5 p-4 rounded-xl">
-                                <div class="w-10 h-10 bg-[#ffa600] rounded-full flex items-center justify-center font-bold">3</div>
-                                <p class="text-sm">Contact the accounts office for detailed invoices.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section 4: Highlights Summary -->
-        <section id="highlights" class="mb-20">
-            <h2 class="text-3xl font-extrabold section-title mb-8 uppercase tracking-tight">Remarkable Highlights</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100 text-center">
-                    <p class="text-xs font-bold text-[#003f5c]">Cyber X</p>
-                    <p class="text-[10px] text-slate-500">MTN Digital Defenders</p>
-                </div>
-                <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100 text-center">
-                    <p class="text-xs font-bold text-[#bc5090]">1-Ummah</p>
-                    <p class="text-[10px] text-slate-500">Peace & Unity</p>
-                </div>
-                <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100 text-center">
-                    <p class="text-xs font-bold text-[#ef5675]">Poetry</p>
-                    <p class="text-[10px] text-slate-500">Creative Workshop</p>
-                </div>
-                <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100 text-center">
-                    <p class="text-xs font-bold text-[#ffa600]">Trade Fair</p>
-                    <p class="text-[10px] text-slate-500">Business Exposure</p>
-                </div>
+            <div class="bg-[#7a5195] text-white p-10 md:p-16 rounded-[3rem] shadow-2xl">
+                <h2 class="text-3xl font-black mb-6 text-[#ffa600]">School Fees & Payment Policy</h2>
+                <p class="mb-4">Fees must be paid on or before the first day of resumption. Please present evidence of payment at the accounts office to receive clearance for classes.</p>
             </div>
         </section>
 
@@ -218,32 +226,20 @@
                     <h2 class="text-4xl font-black text-[#003f5c] mb-6">Term 2 <br/><span class="text-[#ef5675]">Resumption</span></h2>
                     <div class="space-y-6">
                         <div class="flex items-center space-x-6">
-                            <div class="w-16 h-16 bg-[#003f5c] text-white rounded-2xl flex flex-col items-center justify-center shadow-lg">
+                            <div class="w-16 h-16 bg-[#003f5c] text-white rounded-2xl flex flex-col items-center justify-center">
                                 <span class="text-xs font-bold uppercase">Jan</span>
                                 <span class="text-xl font-black">11</span>
                             </div>
-                            <div>
-                                <h4 class="font-bold text-[#003f5c]">Boarders Return</h4>
-                                <p class="text-sm text-slate-500">Sunday | 12:00 PM - 4:30 PM</p>
-                            </div>
+                            <p class="font-bold">Boarders Return (12:00 PM - 4:30 PM)</p>
                         </div>
                         <div class="flex items-center space-x-6">
-                            <div class="w-16 h-16 bg-[#ef5675] text-white rounded-2xl flex flex-col items-center justify-center shadow-lg">
+                            <div class="w-16 h-16 bg-[#ef5675] text-white rounded-2xl flex flex-col items-center justify-center">
                                 <span class="text-xs font-bold uppercase">Jan</span>
                                 <span class="text-xl font-black">12</span>
                             </div>
-                            <div>
-                                <h4 class="font-bold text-[#003f5c]">Classes Commence</h4>
-                                <p class="text-sm text-slate-500">Monday | All Students</p>
-                            </div>
+                            <p class="font-bold">Classes Commence for All Students</p>
                         </div>
                     </div>
-                </div>
-                <div class="md:w-1/2 bg-[#003f5c] text-white p-10 rounded-3xl relative overflow-hidden">
-                    <h3 class="text-xl font-bold mb-4 text-[#ffa600]">A Message of Thanks</h3>
-                    <p class="text-blue-200 leading-relaxed italic text-sm">
-                        "Thank you to our remarkable faculty for their tireless dedication. We look forward to achieving even greater heights in the new term. Jazakumullahu Khairan."
-                    </p>
                 </div>
             </div>
         </section>
@@ -251,40 +247,17 @@
     </main>
 
     <footer class="bg-slate-900 text-slate-500 py-12 px-6 mt-12 text-center">
-        <div class="max-w-6xl mx-auto">
-            <div class="font-extrabold text-white text-xl mb-4 tracking-tighter">TAQWA HIGH SCHOOL</div>
-            <p class="text-[10px]">&copy; 2025 Taqwa Schools. Term 1 Newsletter 25/26.</p>
-        </div>
+        <div class="font-extrabold text-white text-xl mb-4 tracking-tighter uppercase">Taqwa High School</div>
+        <p class="text-[10px]">&copy; 2025 Taqwa Schools. Term 1 Newsletter.</p>
     </footer>
 
     <script>
         window.addEventListener('DOMContentLoaded', () => {
-            const wrapLabel = (label) => {
-                if (typeof label !== 'string' || label.length <= 16) return label;
-                const words = label.split(' ');
-                const lines = [];
-                let currentLine = '';
-                words.forEach(word => {
-                    if ((currentLine + word).length > 16) {
-                        lines.push(currentLine.trim());
-                        currentLine = word + ' ';
-                    } else {
-                        currentLine += word + ' ';
-                    }
-                });
-                lines.push(currentLine.trim());
-                return lines;
-            };
-
             const ctx = document.getElementById('performanceChart').getContext('2d');
-            
-            const labels = ['Core Academics', 'Digital Literacy', 'Civic Ethics', 'Creative Arts', 'Assessment Score'];
-            const processedLabels = labels.map(label => wrapLabel(label));
-
             new Chart(ctx, {
                 type: 'radar',
                 data: {
-                    labels: processedLabels,
+                    labels: ['Academics', 'Digital', 'Civic', 'Arts', 'Score'],
                     datasets: [{
                         label: 'Mastery Index',
                         data: [93.6, 95, 92, 94, 93.6],
@@ -297,38 +270,11 @@
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
-                    scales: {
-                        r: {
-                            beginAtZero: true,
-                            max: 100,
-                            ticks: { display: false },
-                            pointLabels: {
-                                font: { size: 10, weight: '600' },
-                                color: '#003f5c'
-                            }
-                        }
-                    },
-                    plugins: {
-                        legend: { display: false },
-                        tooltip: {
-                            callbacks: {
-                                title: function(tooltipItems) {
-                                    const item = tooltipItems[0];
-                                    let label = item.chart.data.labels[item.dataIndex];
-                                    return Array.isArray(label) ? label.join(' ') : label;
-                                }
-                            }
-                        }
-                    }
+                    scales: { r: { beginAtZero: true, max: 100, ticks: { display: false } } },
+                    plugins: { legend: { display: false } }
                 }
             });
         });
     </script>
 </body>
 </html>
-<!-- 
-SUMMARY:
-- Updated Academic Session to 2025/2026 throughout the document.
-- Updated Copyright year to 2025.
-- Maintained all previous content: Introduction, Academics (93.6%), Learning Assessment, Character & Conduct, School Fees Policy, and Highlights.
--->
